@@ -4,6 +4,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 interface ShopItemProps {
   name: string;
@@ -28,6 +29,9 @@ const ShopItem: React.FC<ShopItemProps> = ({ name, price, color, img }) => {
             <Typography variant="body2" color="text.secondary">
               Цвет: {color}
             </Typography>
+            <Button variant="contained" color="primary">
+          ADD TO CART
+        </Button>
           </React.Fragment>
         }
       />
